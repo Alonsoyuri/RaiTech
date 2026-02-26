@@ -4,11 +4,10 @@ import { Header } from '../components/Header';
 export function CheckoutPage() {
   return (
     <>
-        <title>Checkout</title>
       <Header />
+         <title>Checkout</title>
       <div className="checkout-page">
         <div className="page-title">Review your order</div>
-
         <div className="checkout-grid">
           <div className="order-summary">
             <div className="cart-item-container">
