@@ -1,10 +1,11 @@
 import './header.css';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-export function Header( cart ) {
+export function Header({ cart = [] }) {
   let totalQuantity = 0;
-  cart.cart.forEach((cartItem) => {
-totalQuantity += cartItem.quantity;
+  cart.forEach((cartItem) => {
+    totalQuantity += cartItem.quantity;
   });
 
   return (
@@ -38,3 +39,11 @@ totalQuantity += cartItem.quantity;
     </div>
   );
 }
+
+Header.propTypes = {
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      quantity: PropTypes.number.isRequired,
+    })
+  ),
+};

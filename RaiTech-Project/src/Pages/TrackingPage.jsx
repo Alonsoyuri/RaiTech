@@ -1,12 +1,11 @@
 import { Link } from 'react-router';
-import { Header } from '../components/Header';
 import './TrackingPage.css';
+import './checkout-header.css';
 
 export function TrackingPage() {
   return (
     <>
       <title>Order Tracking</title>
-      <Header />
       <div className="header">
         <div className="left-section">
           <Link to="/" className="header-link">
