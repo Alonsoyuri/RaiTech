@@ -15,7 +15,7 @@ export function HomePage({ cart }) {
   return (
     <>
       <Header cart = {cart} />
-      <title>RaiTech</title>
+      <title>RaiTech</title> 
       <div className="home-page">
         <div className="products-grid">
           {products.map((product) => {

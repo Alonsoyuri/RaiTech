@@ -1,5 +1,5 @@
 .header {
-  background-color: rgb(8, 79, 45);
+  background-color: rgb(115, 79, 188);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -36,6 +36,7 @@
 
 .header .header-link:hover {
   border: 1px solid white;
+  border-radius: 5px;
 }
 
 .header .logo {
@@ -76,15 +77,16 @@
   border: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .header .search-button {
-  background-color: rgb(186, 255, 190);
+  background-color: rgb(255, 255, 255);
   border: none;
-  width: 45px;
+  width: 45px;  
   height: 40px;
+  margin-left: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   flex-shrink: 0;

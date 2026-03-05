@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router';
 import { useEffect, useState } from 'react'; 
 import { HomePage } from './pages/HomePage';
 import { CheckoutPage } from './pages/CheckoutPage';
