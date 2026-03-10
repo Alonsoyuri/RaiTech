@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import "./HomePage.css";
 
 
-export function HomePage({ cart }) {
+export function HomePage({ cart, loadCart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -18,10 +18,11 @@ export function HomePage({ cart }) {
 
   return (
     <>
+        <title>RaiTech</title> 
       <Header cart = {cart} />
-      <title>RaiTech</title> 
+
       <div className="home-page">
-       <ProductsGrid  products={products}/>
+       <ProductsGrid  products={products} loadCart = {loadCart}/>
       </div>
     </>
   );
