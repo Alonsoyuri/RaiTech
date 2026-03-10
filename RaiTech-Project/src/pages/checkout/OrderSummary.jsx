@@ -12,7 +12,6 @@ export function OrderSummary ( {cart , deliveryOptions}) {
               return deliveryOption.id === cartItem.deliveryOptionId;
             },
           );
-
           return (
             <div key={cartItem.productId} className="cart-item-container">
               <div className="delivery-date">
@@ -21,7 +20,6 @@ export function OrderSummary ( {cart , deliveryOptions}) {
                   "dddd, MMMM D",
                 )}
               </div>
-
               <div className="cart-item-details-grid">
                 <img className="product-image" src={cartItem.product.image} />
 
