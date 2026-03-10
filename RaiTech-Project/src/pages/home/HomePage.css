@@ -150,6 +150,7 @@
 }
 
 .home-page .add-to-cart-button {
+  background-color: rgb(207, 167, 245);
   width: 100%;
   padding: 8px;
   height: 34px;
